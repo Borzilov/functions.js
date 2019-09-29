@@ -1,17 +1,24 @@
 {
   "name": "functions.js",
-  "version": "1.2.1",
+  "version": "2.1.0",
   "description": "A hub of numerous functions.",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "babel src --out-dir dist && npm run generate-readme",
-    "generate-readme": "node ./scripts/generator.js",
-    "prepublish": "npm run build"
+    "build": "babel src --out-dir dist",
+    "build:umd": "webpack --env dev && webpack --env build",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "mocha scripts/test/ -w --recursive",
+    "test:single": "mocha scripts/test/ --recursive",
+    "generate-readme": "node ./scripts/generator.js"
   },
   "homepage": "https://github.com/theIYD/functions.js",
   "repository": {
     "url": "https://github.com/theIYD/functions.js"
   },
+  "files": [
+    "dist",
+    "umd"
+  ],
   "keywords": [
     "functions",
     "math",
@@ -25,6 +32,15 @@
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "webpack": "^3.10.0",
+    "yargs": "^10.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "firebase": "^4.8.1"
   }
 }

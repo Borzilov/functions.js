@@ -1,5 +1,11 @@
 const funcs = [
     {
+        title: '`anagram(str1, str2)`',
+        topic: 'string',
+        description: 'Both strings are anagrams',
+        return_type: 'boolean'
+    },
+    {
         title: '`average(arr)`',
         topic: 'math',
         description: 'Calculates the average of an array',
@@ -24,9 +30,33 @@ const funcs = [
         return_type: 'string'
     },
     {
+        title: '`catalan(number)`',
+        topic: 'math',
+        description: 'Catalan Number',
+        return_type: 'number'
+    },
+    {
         title: '`changeBase(number, original, final)`',
         topic: 'math',
         description: 'Convert a base of a number to any base.',
+        return_type: 'number'
+    },
+    {
+        title: '`chunk(arr, size)`',
+        topic: 'math',
+        description: 'Split array into chunks of smaller arrays of the desired size.',
+        return_type: 'array'
+    },
+    {
+        title: '`clamp(number, min, max)`',
+        topic: 'math',
+        description: 'Clamp a number.',
+        return_type: 'number'
+    },
+    {
+        title: '`collatz(number)`',
+        topic: 'algortihm',
+        description: 'Collatz Algorithm.',
         return_type: 'number'
     },
     {
@@ -42,6 +72,12 @@ const funcs = [
         return_type: 'arr'
     },
     {
+        title: '`cosineRule(sideOne, sideTwo, theta)`',
+        topic: 'math',
+        description: 'Cosine Rule.',
+        return_type: 'number'
+    },
+    {
         title: '`countPrimeFactors(n)`',
         topic: 'math',
         description: 'A function to count all prime factors of a given number.',
@@ -52,6 +88,30 @@ const funcs = [
         topic: 'string',
         description: 'Count the number of vowels in a string.',
         return_type: 'number'
+    },
+    {
+        title: '`degToRad(deg)`',
+        topic: 'math',
+        description: 'Convert degrees to radians.',
+        return_type: 'number'
+    },
+    {
+        title: '`differenceBetweenDates(date1, date2)`',
+        topic: 'math',
+        description: 'Simple division function which returns an array of quotient & remainder.',
+        return_type: 'array'
+    },
+    {
+        title: '`digitalRoot(number)`',
+        topic: 'math',
+        description: 'Digital Root of a number',
+        return_type: 'number'
+    },
+    {
+        title: '`division(dividend, divisor)`',
+        topic: 'math',
+        description: 'Simple division function which returns an array of quotient & remainder.',
+        return_type: 'array'
     },
     {
         title: '`doublefactorial(n)`',
@@ -70,12 +130,6 @@ const funcs = [
         topic: 'math',
         description: 'Calculates the distance between two points in any plane. initial takes an array of initial points & final takes an array of final points.',
         return_type: 'number'
-    },
-    {
-        title: '`evenOrOdd(number)`',
-        topic: 'math',
-        description: 'Number is even or odd',
-        return_type: 'boolean'
     },
     {
         title: '`factorialRecursive(n)`',
@@ -132,10 +186,22 @@ const funcs = [
         return_type: 'array'
     },
     {
+        title: '`fizzBuzz(n)`',
+        topic: 'algorithm',
+        description: 'FizzBuzz Algorithm: most famous asked question.',
+        return_type: 'string'
+    },
+    {
         title: '`flatten(arr, givenArr)`',
         topic: 'algorithm',
         description: 'Flatten/Merge two arrays.',
         return_type: 'array'
+    },
+    {
+        title: '`geometricVariance(probability)`',
+        topic: 'math',
+        description: 'Calculate geometric variance.',
+        return_type: 'number'
     },
     {
         title: '`gcd(numb1, numb2)`',
@@ -144,10 +210,28 @@ const funcs = [
         return_type: 'number'
     },
     {
+        title: '`generateHexColor()`',
+        topic: 'string',
+        description: 'Generate random hex color.',
+        return_type: 'string'
+    },
+    {
+        title: '`generateRGBColor()`',
+        topic: 'string',
+        description: 'Generate random RGB color.',
+        return_type: 'string'
+    },
+    {
         title: '`guid(len)`',
         topic: 'string',
         description: 'Generate a Global Unique Identifier',
         return_type: 'string'
+    },
+    {
+        title: '`hammingDistance(number1, number2)`',
+        topic: 'math',
+        description: 'Calculate hamming distance.',
+        return_type: 'number'
     },
     {
         title: '`hasAtleastOneUpperCaseLetter(str)`',
@@ -162,10 +246,28 @@ const funcs = [
         return_type: 'boolean'
     },
     {
+        title: '`hexToRgb(hex)`',
+        topic: 'string',
+        description: 'Converts hex color to RGB.',
+        return_type: 'array'
+    },
+    {
+        title: '`humanizeNumber(num)`',
+        topic: 'string',
+        description: 'Humanize a number.',
+        return_type: 'string'
+    },
+    {
         title: '`insertionSort(arr)`',
         topic: 'algorithm',
         description: 'Sort an array using the insertion sort technique.',
         return_type: 'array'
+    },
+    {
+        title: '`integerReversal(integer)`',
+        topic: 'mathematics',
+        description: 'Reverse an integer.',
+        return_type: 'number'
     },
     {
         title: '`isASCII(str)`',
@@ -183,6 +285,18 @@ const funcs = [
         title: '`isDataURI(str)`',
         topic: 'string',
         description: 'String is a data uri format.',
+        return_type: 'boolean'
+    },
+    {
+        title: '`isDivisible(dividend, divisor)`',
+        topic: 'math',
+        description: 'Check if the first number is divisible by second one.',
+        return_type: 'boolean'
+    },
+    {
+        title: '`isEmoji(str)`',
+        topic: 'string',
+        description: 'String is an emoji.',
         return_type: 'boolean'
     },
     {
@@ -204,6 +318,18 @@ const funcs = [
         return_type: 'boolean'
     },
     {
+        title: '`isEven(number)`',
+        topic: 'math',
+        description: 'True if a number is even, false otherwise.',
+        return_type: 'boolean'
+    },
+    {
+        title: '`isFunction(val)`',
+        topic: 'string',
+        description: 'Value is a function.',
+        return_type: 'boolean'
+    },
+    {
         title: '`isHexaDecimal(str)`',
         topic: 'string',
         description: 'String is hexadecimal.',
@@ -219,6 +345,12 @@ const funcs = [
         title: '`isIPAddress(str)`',
         topic: 'string',
         description: 'String is an IP address.',
+        return_type: 'boolean'
+    },
+    {
+        title: '`isJSON(str)`',
+        topic: 'string',
+        description: 'String is a JSON object.',
         return_type: 'boolean'
     },
     {
@@ -246,6 +378,12 @@ const funcs = [
         return_type: 'string'
     },
     {
+        title: '`isOdd(number)`',
+        topic: 'math',
+        description: 'True if a number is odd, false otherwise.',
+        return_type: 'boolean'
+    },
+    {
         title: '`ISO8601WeekNumber(dateObj)`',
         topic: 'string',
         description: 'Get ISO-8601 week number of a year.',
@@ -255,6 +393,12 @@ const funcs = [
         title: '`isPalindrome(str)`',
         topic: 'string',
         description: 'String is a palindrome.',
+        return_type: 'boolean'
+    },
+    {
+        title: '`isPrime(number)`',
+        topic: 'string',
+        description: 'Number is a prime.',
         return_type: 'boolean'
     },
     {
@@ -270,10 +414,34 @@ const funcs = [
         return_type: 'boolean'
     },
     {
+        title: '`kebabCase(str)`',
+        topic: 'string',
+        description: 'to Kebab Case.',
+        return_type: 'string'
+    },
+    {
+        title: '`lcm(arr)`',
+        topic: 'math',
+        description: 'Calculate LCM of an array of numbers',
+        return_type: 'number'
+    },
+    {
+        title: '`leibniz(limit)`',
+        topic: 'math',
+        description: 'Predict the value of PI',
+        return_type: 'number'
+    },
+    {
         title: '`linearSearch(arr, elem)`',
         topic: 'algorithm',
         description: 'Search an element using linear search technique',
         return_type: 'number(position)'
+    },
+    {
+        title: '`lineFromPoints(initial, final)`',
+        topic: 'math',
+        description: 'Create a line from [x1, y1] & [x2, y2] in XY plane.',
+        return_type: 'string'
     },
     {
         title: '`maxOrMin(arr, task)`',
@@ -282,9 +450,33 @@ const funcs = [
         return_type: 'number'
     },
     {
+        title: '`median(arr)`',
+        topic: 'math',
+        description: 'Calculate median of a sorted number array',
+        return_type: 'number'
+    },
+    {
+        title: '`modularExponential(base, power, mod)`',
+        topic: 'algorithm',
+        description: 'Modular Exponential Algorithm',
+        return_type: 'number'
+    },
+    {
         title: '`nthRoot(number, n)`',
         topic: 'math',
         description: 'Calculates the nth root of a positive number',
+        return_type: 'number'
+    },
+    {
+        title: '`nthSGonalNumber(sides, number)`',
+        topic: 'math',
+        description: `Calculates the nth s-gonal number of 'sides' polygon`,
+        return_type: 'number'
+    },
+    {
+        title: '`nthLargest(arr, nth)`',
+        topic: 'algorithm',
+        description: 'Find the nth largest number from an unsorted array',
         return_type: 'number'
     },
     {
@@ -300,10 +492,28 @@ const funcs = [
         return_type: 'number'
     },
     {
+        title: '`radToDeg(rad)`',
+        topic: 'math',
+        description: 'Convert radians to degrees',
+        return_type: 'number'
+    },
+    {
         title: '`remove(arr)`',
         topic: 'algorithm',
         description: 'Remove an element from an array',
         return_type: 'arr'
+    },
+    {
+        title: '`removeDuplicate(arr)`',
+        topic: 'algorithm',
+        description: 'Remove duplicates from an array',
+        return_type: 'arr'
+    },
+    {
+        title: '`removeTags(str)`',
+        topic: 'string',
+        description: 'Remove tags from an HTML statement',
+        return_type: 'string'
     },
     {
         title: '`reverse(arr)`',
@@ -312,10 +522,28 @@ const funcs = [
         return_type: 'arr'
     },
     {
+        title: '`reverseInPlace(str)`',
+        topic: 'string',
+        description: 'Reverse words of a sentence in place',
+        return_type: 'string'
+    },
+    {
         title: '`rgbToHex(red,green,blue)`',
         topic: 'string',
         description: 'RGB to Hex format',
         return_type: 'string'
+    },
+    {
+        title: '`romanize(num)`',
+        topic: 'string',
+        description: 'Romanize a number',
+        return_type: 'string'
+    },
+    {
+        title: '`round(number)`',
+        topic: 'math',
+        description: 'Round a number to two places',
+        return_type: 'number'
     },
     {
         title: '`secureEmail(str)`',
@@ -324,10 +552,34 @@ const funcs = [
         return_type: 'string'
     },
     {
+        title: '`securePassword(str)`',
+        topic: 'string',
+        description: 'Secure password using astrisks',
+        return_type: 'string'
+    },
+    {
+        title: '`segregate(arr)`',
+        topic: 'algorithm',
+        description: 'Segregate 0\'s and 1\'s in an array',
+        return_type: 'array'
+    },
+    {
         title: '`selectionSort(arr)`',
         topic: 'algorithm',
         description: 'Sort an array using the selection sort technique',
         return_type: 'arr'
+    },
+    {
+        title: '`sigmoid(number)`',
+        topic: 'math',
+        description: 'Sigmoid Function',
+        return_type: 'number'
+    },
+    {
+        title: '`sineRule(sideOne, angleOne, angleTwo)`',
+        topic: 'math',
+        description: 'Sine Rule using two angles & one side',
+        return_type: 'number'
     },
     {
         title: '`slopeOfALine(arg)`',
@@ -336,11 +588,95 @@ const funcs = [
         return_type: 'number'
     },
     {
+        title: '`snakeCase(str)`',
+        topic: 'string',
+        description: 'to Snake Case',
+        return_type: 'string'
+    },
+    {
+        title: '`sortChar(str)`',
+        topic: 'string',
+        description: 'Sort string characters in alphabetical order',
+        return_type: 'string'
+    },
+    {
+        title: '`splitName(str)`',
+        topic: 'string',
+        description: 'Return the first name and the last name of a person\'s name.',
+        return_type: 'array'
+    },
+    {
+        title: '`stringHammingDistance(str1, str2)`',
+        topic: 'string',
+        description: 'String Hamming Distance',
+        return_type: 'number'
+    },
+    {
+        title: '`subtract(firstNum, secondNum)`',
+        topic: 'math',
+        description: 'Subtract a number from another',
+        return_type: 'number'
+    },
+    {
         title: '`sumOfArray(arr)`',
         topic: 'math',
         description: 'Addition of all the integers in an array',
         return_type: 'number'
     },
+    {
+        title: '`thousandSeperator(num)`',
+        topic: 'string',
+        description: 'Seperate thousands using commas',
+        return_type: 'number'
+    },
+    {
+        title: '`toFloat(str)`',
+        topic: 'string',
+        description: 'Parse string to float value',
+        return_type: 'number'
+    },
+    {
+        title: '`toInt(str)`',
+        topic: 'string',
+        description: 'Parse string to integer value',
+        return_type: 'number'
+    },
+    {
+        title: '`toTitleCase(str)`',
+        topic: 'string',
+        description: 'Convert string to titleCase',
+        return_type: 'string'
+    },
+    {
+        title: '`truncate(str,pos)`',
+        topic: 'string',
+        description: 'Truncate a string at provided position',
+        return_type: 'string'
+    },
+    {
+        title: '`trailingAndLeading(arr)`',
+        topic: 'string',
+        description: 'Remove leading and trailing zeroes from an array',
+        return_type: 'array'
+    },
+    {
+        title: '`unescape(str)`',
+        topic: 'string',
+        description: 'Unescape the string.',
+        return_type: 'string'
+    },
+    {
+        title: '`uuid()`',
+        topic: 'string',
+        description: 'Generate a UUID i.e universally unique identifier.',
+        return_type: 'number'
+    },
+    {
+        title: '`zeroFill(number, len)`',
+        topic: 'string',
+        description: 'Zerofill a number to the given length.',
+        return_type: 'number'
+    }
 ];
 
 module.exports = funcs;
